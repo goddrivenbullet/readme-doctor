@@ -43,6 +43,23 @@ readme-doctor .
 readme-doctor . --json
 ```
 
+## CLI
+
+```
+readme-doctor — Why nobody is using your repository — checked in one command.
+
+USAGE
+  readme-doctor .
+  readme-doctor . --json
+
+COMMANDS / OPTIONS
+  --json  machine-readable output
+
+Exit code 1 when the README has an error-level finding.
+
+MIT · https://github.com/rustemmustafingovua-byte
+```
+
 ## Part of a portfolio
 
 | Project | What it does |
