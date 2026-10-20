@@ -1,0 +1,43 @@
+{
+  "name": "readme-doctor",
+  "version": "0.1.0",
+  "description": "A README is the product page. readme-doctor audits the things that decide whether someone installs it: a working install line, a visible demo, a license, resolvable links, closed code fences and a first paragraph that says what the thing does.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "readme-doctor": "bin/readme-doctor.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "readme",
+    "documentation",
+    "open-source",
+    "developer-tools",
+    "audit",
+    "docs",
+    "github"
+  ],
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "node --check src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rustemmustafingovua-byte/readme-doctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rustemmustafingovua-byte/readme-doctor/issues"
+  },
+  "homepage": "https://github.com/rustemmustafingovua-byte/readme-doctor"
+}
