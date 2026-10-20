@@ -7,6 +7,19 @@
  */
 import { audit, suggestions } from "../src/index.js"
 
+// --- CLI shell: --help / --version -------------------------------------------
+const HELP = "readme-doctor — Why nobody is using your repository — checked in one command.\n\nUSAGE\n  readme-doctor .\n  readme-doctor . --json\n\nCOMMANDS / OPTIONS\n  --json  machine-readable output\n\nExit code 1 when the README has an error-level finding.\n\nMIT · https://github.com/rustemmustafingovua-byte"
+const VERSION = "0.1.0"
+if (process.argv.includes("--help") || process.argv.includes("-h")) {
+  console.log(HELP)
+  process.exit(0)
+}
+if (process.argv.includes("--version") || process.argv.includes("-V")) {
+  console.log(VERSION)
+  process.exit(0)
+}
+
+
 const argv = process.argv.slice(2)
 const dir = argv.find((a) => !a.startsWith("--")) || "."
 const report = audit(dir)
