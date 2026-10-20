@@ -26,6 +26,14 @@ A README is the product page. readme-doctor audits the things that decide whethe
 npm i -g readme-doctor
 ```
 
+<details>
+<summary>Без npm-логина — из tarball релиза</summary>
+
+```bash
+npm i -g https://github.com/rustemmustafingovua-byte/readme-doctor/releases/download/v0.1.0/readme-doctor-0.1.0.tgz
+```
+
+</details>
 ## What it does
 
 | | |
